@@ -7,7 +7,7 @@ else()
     add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-set(CPPP_PUBLIC_HEADER ${CMAKE_SOURCE_DIR}/include)
+# set(CPPP_PUBLIC_HEADER ${CMAKE_SOURCE_DIR}/include)
 # set(CPPP csapp_lib)
 
-add_subdirectory(app)
+add_subdirectory(exercises)
