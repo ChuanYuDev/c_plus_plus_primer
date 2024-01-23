@@ -1,4 +1,5 @@
 struct Foo {/**/} //Note no semicolon
-int main(){
+int main()
+{
     return 0;
 }
