@@ -11,3 +11,12 @@ add_executable(1.13_1 1.13_1.cpp)
 add_executable(1.13_2 1.13_2.cpp)
 add_executable(1.16 1.16.cpp)
 add_executable(1.18 1.18.cpp)
+
+add_executable(1.20 1.20.cpp)
+target_include_directories(1.20 PUBLIC ${CMAKE_SOURCE_DIR})
+
+add_executable(1.21 1.21.cpp)
+target_include_directories(1.21 PUBLIC ${CMAKE_SOURCE_DIR})
+
+add_executable(1.22 1.22.cpp)
+target_include_directories(1.22 PUBLIC ${CMAKE_SOURCE_DIR})

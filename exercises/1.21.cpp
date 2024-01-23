@@ -1,8 +1,10 @@
-#include "Sales_item.h"
 #include <iostream>
+#include <external/cppp/1/Sales_item.h>
 
-Sales_item add_items(const Sales_item& item1, const Sales_item& item2){
-    if (!compareIsbn(item1, item2)){
+Sales_item add_items(const Sales_item &item1, const Sales_item &item2)
+{
+    if (!compareIsbn(item1, item2))
+    {
         std::cerr << "isbn is not same" << std::endl;
         return Sales_item();
     }
