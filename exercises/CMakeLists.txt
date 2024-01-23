@@ -23,3 +23,6 @@ target_include_directories(1.22 PUBLIC ${CMAKE_SOURCE_DIR})
 
 add_executable(1.23 1.23.cpp)
 target_include_directories(1.23 PUBLIC ${CMAKE_SOURCE_DIR})
+
+add_executable(1.25 1.25.cpp)
+target_include_directories(1.25 PUBLIC ${CMAKE_SOURCE_DIR})
