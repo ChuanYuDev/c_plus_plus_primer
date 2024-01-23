@@ -5,7 +5,8 @@ int main()
     int val, sum = 0;
     std::cout << "Input integers: " << std::endl;
 
-    while (std::cin >> val){
+    while (std::cin >> val)
+    {
         sum += val;
     }
 
