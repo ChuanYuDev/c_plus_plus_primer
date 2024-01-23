@@ -3,24 +3,25 @@
 
 int main()
 {
-    Sales_item item;
+    Sales_item sum, item;
 
-    if (std::cin >> item)
+    if (!(std::cin >> sum))
     {
-        Sales_item sum(item);
-
-        while(std::cin >> item)
-        {
-            if (!compareIsbn(sum, item))
-            {
-                std::cerr << "sum: " << sum << "\nitem: " << item << "\nisbn is not same" << std::endl;
-                return 1;
-            }
-            sum += item;
-        }
-
-        std::cout << sum << std::endl;
+        std::cerr << "No data" << std::endl;
+        return 1;
     }
+
+    while(std::cin >> item)
+    {
+        if (sum.isbn() != item.isbn())
+        {
+            std::cerr << "Sum: " << sum << "\nItem: " << item << "\nISBN is not same" << std::endl;
+            return 1;
+        }
+        sum += item;
+    }
+
+    std::cout << sum << std::endl;
 
     return 0;
 }
