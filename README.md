@@ -5,6 +5,7 @@ Book:
 - Fifth Edition (ISBN-10: 0-321-71411-3)
 
 Naming conventions:
+- docs/x, exercises/x: x means chapter number
 - No namespace for exercises
 
 External:
