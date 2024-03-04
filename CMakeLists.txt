@@ -11,3 +11,4 @@ endif()
 # set(CPPP csapp_lib)
 
 add_subdirectory(exercises)
+# add_subdirectory(tests)
